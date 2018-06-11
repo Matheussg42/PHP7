@@ -11,7 +11,9 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        echo "Olá mundo!";
+        echo "Olá mundo456!";
+        
+        echo "Olá Udemy!";
         ?>
     </body>
 </html>
