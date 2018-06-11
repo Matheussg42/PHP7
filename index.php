@@ -13,7 +13,7 @@ and open the template in the editor.
         <?php
         echo "Olá mundo456!";
         
-        echo "Olá Udemy!";
+        echo "Olá Udemy e HCode!";
         ?>
     </body>
 </html>
