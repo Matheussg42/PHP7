@@ -10,13 +10,13 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-//        $nome = (int) $_GET("a");
+        <select>
+            <?php
+            for ($i = date('Y'); $i >= date('Y') - 30; $i--) {
 
-//        $ip = $_SERVER["REMOTE_ADDR"];
-        $ip = $_SERVER["SERVER_ADDR"];
-
-        echo $ip;
-        ?>
+                echo "<option value='{$i}'>{$i}</option>";
+            }
+            ?>
+        </select>
     </body>
 </html>

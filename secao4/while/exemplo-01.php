@@ -11,12 +11,19 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-//        $nome = (int) $_GET("a");
-
-//        $ip = $_SERVER["REMOTE_ADDR"];
-        $ip = $_SERVER["SERVER_ADDR"];
-
-        echo $ip;
+        $condicao = true;
+        
+        while ($condicao){
+            $numero = rand(1, 10);
+            
+            if($numero === 3){
+                echo "TRES!!!";
+                $condicao = false;
+            }else{
+                echo $numero . ", ";
+            }
+        }
+        
         ?>
     </body>
 </html>

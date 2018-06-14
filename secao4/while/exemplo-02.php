@@ -11,12 +11,16 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-//        $nome = (int) $_GET("a");
-
-//        $ip = $_SERVER["REMOTE_ADDR"];
-        $ip = $_SERVER["SERVER_ADDR"];
-
-        echo $ip;
+        $total = 150;
+        $desconto = 0.9;
+        
+        do{
+            $total *= $desconto;
+        } while ($total > 100);
+        
+        echo $total;
+        
+        
         ?>
     </body>
 </html>

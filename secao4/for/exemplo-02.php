@@ -11,12 +11,10 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-//        $nome = (int) $_GET("a");
-
-//        $ip = $_SERVER["REMOTE_ADDR"];
-        $ip = $_SERVER["SERVER_ADDR"];
-
-        echo $ip;
+            for ($i = 0; $i < 10; $i--){
+                
+                echo $i . " ";
+            }
         ?>
     </body>
 </html>
