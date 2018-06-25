@@ -18,23 +18,29 @@ and open the template in the editor.
 //        
 //        echo json_encode($usuarios);
         
-        //Carrega um usuário
+        //CARREGA UM USUÁRIO
         //$root = new Usuario();
         //$root->loadById(3);
         //echo $root;
 
-        //Carrega uma lista de usuários
+        //CARREGA UMA LISTA DE USUÁRIOS
         //$lista = Usuario::getList();
         //echo json_encode($lista);
         
-        //Carrega uma lista de usuários buscando pelo Login
+        //CARREGA UMA LISTA DE USUÁRIOS BUSCANDO PELO LOGIN
         //$search = Usuario::search('jo');
         //echo json_encode($search);
         
         //CARREGA UM USUÁRIO USANDO O LOGIN E A SENHA
-        $usuario = new Usuario();
-        $usuario->login("root", "!@#$%123");
-        echo $usuario
+        //$usuario = new Usuario();
+        //$usuario->login("root", "!@#$%123");
+        //echo $usuario
+        
+        $aluno = new Usuario("aluno", "@lun0");
+        
+        $aluno->insert();
+        echo $aluno;
+        
         ?>
     </body>
 </html>
