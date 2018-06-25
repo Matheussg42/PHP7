@@ -36,11 +36,21 @@ and open the template in the editor.
         //$usuario->login("root", "!@#$%123");
         //echo $usuario
         
-        $aluno = new Usuario("aluno", "@lun0");
+        //CRIANDO UM NOVO USUÁRIO
+        //$aluno = new Usuario("aluno", "@lun0");
+        //$aluno->insert();
+        //echo $aluno;
         
-        $aluno->insert();
-        echo $aluno;
+        //ALTERAR UM USUÁRIO
+        //$usuario = new Usuario();
+        //$usuario->loadById(5);
+        //$usuario->update("professor", "!@#$%¨&*");
+        //echo $usuario;
         
+        $usuario = new Usuario();
+        $usuario->loadById(5);
+        $usuario->delete();
+        echo $usuario;
         ?>
     </body>
 </html>
