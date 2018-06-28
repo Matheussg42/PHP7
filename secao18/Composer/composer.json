@@ -1,0 +1,15 @@
+{
+    "name": "matheussg42/composer",
+    "description": "Aula de PHP7 com Composer",
+    "type": "project",
+	"authors":[
+		{
+			"name" : "Matheus S. Gomes",
+			"email" : "matheusbhsantos2@gmail.com"
+		}
+	],
+    "minimum-stability": "dev",
+    "require": {
+		"monolog/monolog": "1.0.*"
+	}
+}
